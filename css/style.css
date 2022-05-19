@@ -14,6 +14,7 @@ body {
     font-family: 'Tapestry', cursive;
     font-size: 16px;
 }
+
  
 header {
     background-color: plum;
@@ -26,6 +27,23 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+@media (max-width:1000px) {
+    ._container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width:600px) {
+    ._container {
+        max-width: 600px;
+    }
+}
+
+
+
+
+
 
 .list {
     list-style-type: none;
@@ -55,25 +73,35 @@ h1 {
  
 .others {
     display: flex;
-    justify-content: space-between;
+    justify-content: center ;
     padding-bottom: 20px;
     flex-wrap: wrap;
-    width: 50% ;
-    gap: 20px;
+    width: 70% ;
+    gap: 15px;
+    margin: 0 auto;
 }
 .summary, .contacts, .skills, .languages  {
-    width: 49%;
+    width: 45%;
 }
 a {
     text-decoration: none;
     color: white;
+
+}
+.link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    width: 65px;
 }
 
 .footer_img {
     width: 65px;
+    
 }
 
 footer {
     background-color: plum;
- 
+    
 }
